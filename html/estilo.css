@@ -1,9 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -11,15 +12,24 @@
 
 }
 
+nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 .75rem;
+  }
+   
+
+
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Bungee Spice" sans-serif;
     background-attachment: fixed;
     background-image: url(img/fondowp.jpg);
     background-size: cover;
-
-    
+  
 }
-
 
  img {
     
@@ -32,14 +42,15 @@ body{
     
  }
     .header {
+       
        display: flex;
         align-items: center;
         min-height: 80vh;
         background: linear-gradient(
             90deg,
-            rgb(238, 64, 203) 0%,
-            rgb(196, 20, 155) 50%,
-            rgb(117, 15, 73) 100%,
+            rgb(223, 208, 10) 0%,
+            rgb(221, 235, 36) 50%,
+            rgb(214, 168, 15) 100%,
         );
         padding: 70px 0px;
     }
@@ -53,21 +64,25 @@ body{
     justify-content: space-between;
 }
 .logo{
-    font-size: 25px;
-    font-weight: 800;
+    max-width: 10%;
+    
 }
+
 .menu .navbar  ul li {
     position: relative;
     float: left;
+    font-family: "Bungee Spice";
 }
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: rgb(206, 124, 185);
+    color: rgb(145, 119, 7);
     display: block;
+    font-family: "Bungee Spice";
+   
 }
 .menu .navbar ul li a:hover {
-    color: #b60ce0;;
+    color: #e0610c;;
 }
 #menu {
     display: none;
@@ -93,16 +108,17 @@ body{
     backdrop-filter: blur(10px);
     top: 100%;
     z-index: 1;
-    background-color: #b30988;;
-    padding: 20px;
-    min-width: 400px;
+    background-image: url(img/pikachu.gif);
+    background-size: cover;
+    padding: 60px;
+    min-width: 350px;
     
 }
 table { 
     width: 100%;
 }
 th, td {
-    color:black;
+    color:rgb(10, 10, 10);
 }
 
 .borrar {
@@ -123,30 +139,32 @@ th, td {
  }
 
  .header-txt h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1;
-    color: #f353b3;
+    color: #bba909;
     text-transform: uppercase;
     margin-bottom: 25px;
+    font-family: "Nabla" 
 
  }
  p {
-    color: #e77db2;;
+    color: #c5ba94;;
     font-size: 18px;
     margin-bottom: 15px;
+    font-family: "Roboto";
  }
 .btn-1, .btn-3 {
     display: inline-block;
     padding: 10px 30px;
-    color: #ec17d0e0;
-    border: 2px solid #f3329c;
+    color: #f1e9c6e0;
+    border: 2px solid #e9ebe2;
     text-transform: capitalize;
     border-radius: 25px;
 }
 
 .btn-1:hover, .btn-3:hover {
-    color: rgb(190, 11, 11);
-    background-color: #8026da;
+    color: rgb(13, 14, 13);
+    background-color: #c46309;
 }
 .header-img {
     flex-basis: 60%;
@@ -156,10 +174,10 @@ th, td {
     padding: 100px 0;
  }
 h2{
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1;
-    color: #961857;
     margin-bottom: 10px;
+    font-family: "Nabla"
 }
 .oferts-content {
     display: flex;
@@ -168,37 +186,38 @@ h2{
    
 }
 .ofert-1 {
-    flex-basis: calc(10% - 50px);
-    box-shadow: 0 0 20px rgb(163, 17, 127);
-    transform: translateY(-5%);
-    padding: 55px;
+    flex-basis: calc(30.3% - 20px);
+    box-shadow: 0 0 20px rgb(116, 115, 114);
+    padding: 80px;
     text-align: center;
     background: linear-gradient(
         rgb(0,0,0,0.2),
         rgb(0,0,0,0.2)
     ),
         url(img/fondowp.jpg);
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .ofert-1 img {
     width: 130px;
     height: 170px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     
 }
 h3 {
     
     font-size: 20px;
     line-height: 1;
-    color: rgb(179, 19, 93);
+    color: rgb(185, 180, 169);
     margin-bottom: 10px;
+    font-family: "Bungee Spice" 
+    
 }
 .product-txt p {
     margin-bottom: 10px;
 }
 .precio {
-    color: rgb(172, 33, 142);
+    color: rgb(207, 128, 8);
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -210,6 +229,8 @@ h3 {
     display: flex;
     width: 800px;
     height: 580px;
+    
+    box-shadow: 0 0 50px rgb(175, 171, 171);
 }
 .perfil img {
     width: 0px;
@@ -219,6 +240,7 @@ h3 {
     transition: .5s ease;
     max-width: 70%;
     
+    
 }
 
 .perfil img:hover {
@@ -226,10 +248,11 @@ h3 {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+    
 }
 
 .logan-1 {
-    flex-basis: 40%;
+    flex-basis: 60%;
     background: linear-gradient(
         rgb(0,0,0,0.2),
         rgb(0,0,0,0.2)
@@ -238,52 +261,37 @@ h3 {
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
-          padding: 50px;
-          border-radius: 10px;
+          padding: 10px;
+          border-radius: 20px;
 }
 .logan-1 h3 {
     font-size: 30px;
-    color:#ebaace;
+    color:#b3990c;
     text-transform: uppercase;
 }
 .logan-1 p {
     font-size: 18px;
     text-transform: uppercase;
-    color: #f5eef2;
+    color: #b3990c;
     margin-bottom: 20px;
 }
 .btn2 {
     display: inline-block;
     padding: 8px  30px;
-    border: 1px solid #f00c7e;
-    color: #d32079;
+    border: 1px solid #b3990c;
+    color: #b3990c;
 }
-.promotion {
-    padding: 80px 0;
-    background-image: url(img/fondowp.jpg)
-}
-.promotion-content {
-    display: flex;
-}
-.promotion-txt {
-    flex-basis: 50%;
-}
-.promotion-img {
-    flex-basis: 50%;
-    text-align: center;
-}
-.promotion-img img {
-    width: 250px;
-}
+
+
 .product {
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
 }
 .product-content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .blog {
     padding: 50px 0 100px  0;
@@ -298,7 +306,7 @@ h3 {
 .blog-1{
     flex-basis: calc(33.3% - 30px);
     margin-top: 25px;
-    box-shadow: 0 0 20px   rgb(117, 15, 73);
+    box-shadow: 0 0 20px   rgb(121, 118, 119);
     
 }
 .blog-txt {
@@ -306,31 +314,186 @@ h3 {
 }
 .btn-4{
     display: inline-block;
-    border: 1px solid  rgb(190, 11, 11);
+    border: 1px solid  rgb(238, 241, 10);
     padding: 8px 25px;
     font-size: 17px;
     text-transform: capitalize;
-    color: #b41866;
+    color: #dd940c;
 }
-.footer {
-    padding: 50px 0;
+
+@media(max-width:991px) {
+menu{
+    padding: 20px;
+}
+.menu label {
+    display: initial;
+}
+.menu .navbar{
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    background-image: url(img/fondowp.jpg);
+    display: none;
+}
+.menu .navbar ul li {
+    width: 100%;
+}
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.logo{
+    display: none;
+
+}
+.menu .navbar ul li a:hover {
+    color: #c5ba94;
+}
+.header{
+    min-height: 0vh;
+    padding: 100 px 30px 50px 30px;
+
+}
+.header-content {
+    flex-direction: column;
+    text-align: center;
+}
+.header-txt {
+    margin-bottom: 25px;
+}
+.oferts{
+    padding: 30px;
+}
+.oferts-content{
+    flex-direction: column;
+}
+.ofert-1{
+margin-bottom: 30px;
+}
+.logan-1{
+    order:-2;
+    margin-bottom: 30px;
+}
+.product {
+    padding: 30px;
+}
+.product-content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+}
+.blog{
+    padding: 30px;
+}
+.blog-content{
+    flex-direction: column;
+}
+#firstSectionFooter {
+padding: 30px;
+flex-direction: column;
+text-align: center;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#firstSectionFooter {
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    height: 13.5rem;
+    justify-content: space-between;
+    margin-top: 7rem;
+  }
+  
+  #redesSociales > h3 {
+    color: #f79708;
+    margin-right: 2rem;
+    font-size: 25px;
+  }
+  .bi-twitter::before {
+    color: #14aed0;
+    font-size: 2rem;
+  }
+  
+  .bi-facebook::before {
+    color: #1476d0;
+    font-size: 2rem;
+  }
+  
+  .bi-instagram::before {
+    color: #ce0cff;
+    font-size: 2rem;
+  }
+  
+  
+  #iconos {
     display: flex;
     justify-content: space-between;
-}
-.link  h3 {
-    font-size: 17px;
-    color: #b60ce0;
-    margin-bottom: 10px;
-}
-.link a {
-    font-size: 17px;
-    color: #8026da;
-    display: block;
-    margin-bottom: 10px;
-}
-.link a:hover {
-    color: #8026da;
-}
+    margin-right: 2rem;
+  }
+  
+  #secondSectionFooter {
+    background-color: #eb8005;
+    height: 1.56rem;
+  }
+  
+  #secondSectionFooter > h6 {
+    padding-top: 3px;
+    text-align: center;
+  }
+  
+  iframe {
+    width: 250px;
+    height: 110px;
+    border-radius: 30px;
+  }
+  
+  .ubi-section p {
+    color: #eb1607;
+    font-size: 18px;
+  }
+  
+  .ubi-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .ubi-section i {
+    color: #aa2605
+  }
+  
+  #contact-section {
+    width: 300px;
+    color: #d66c08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact-section h6 {
+    font-size: 20px;
+    margin-right:2rem;
+  }
+  
+ 
+
 
 
 
